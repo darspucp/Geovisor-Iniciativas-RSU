@@ -1,0 +1,103 @@
+.navbar {
+  height: 10rem;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    height: 10rem;
+  }
+
+  @media (min-width: 1200px) {
+    height: 10rem;
+  }
+
+  @media (min-width: 1440px) {
+    height: 10rem;
+  }
+
+  @media (min-width: 1920px) {
+    height: 14rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+
+  .logo_dars {
+    width: 16rem;
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+      width: 16rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 16rem;
+    }
+
+    @media (min-width: 1440px) {
+      width: 20rem;
+    }
+
+    @media (min-width: 1920px) {
+      width: 25rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+
+  .menu {
+    margin-right: 3rem;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #042354 !important;
+    }
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+      margin-right: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-right: 3rem;
+    }
+
+    @media (min-width: 1440px) {
+      margin-right: 3rem;
+    }
+
+    @media (min-width: 1920px) {
+      margin-right: 5rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+}

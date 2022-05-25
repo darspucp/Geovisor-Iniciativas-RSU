@@ -1,0 +1,53 @@
+{
+  "regiones": [
+    { "slug": "cusco-loreto-piura", "nombre": "Cusco, Loreto y Piura" },
+    {
+      "slug": "huancavelica-apurimac-ica-lima",
+      "nombre": "Huancavelica, Apurímac, Ica y Lima"
+    },
+    {
+      "slug": "junin-ica-apurimac-lima",
+      "nombre": "Junín, Ica, Apurímac y Lima"
+    },
+    {
+      "slug": "lima-ancash-madre-de-dios",
+      "nombre": "Lima, Áncash y Madre de Dios"
+    },
+    {
+      "slug": "lima-ayacucho",
+      "nombre": "Lima y Ayacucho"
+    },
+    {
+      "slug": "lima-cusco",
+      "nombre": "Lima y Cusco"
+    },
+    {
+      "slug": "lima-cusco-san-martin",
+      "nombre": "Lima, Cusco y San Martín"
+    },
+    {
+      "slug": "lima-ucayali",
+      "nombre": "Lima y Ucayali"
+    },
+    {
+      "slug": "lima-arequipa-ayacucho-la-libertad",
+      "nombre": "Lima, Arequipa, Ayacucho y La Libertad"
+    },
+    {
+      "slug": "lima-madre-de-dios",
+      "nombre": "Lima y Madre de Dios"
+    },
+    {
+      "slug": "lima-ica",
+      "nombre": "Lima y Ica"
+    },
+    {
+      "slug": "lima-junin",
+      "nombre": "Lima y Junín"
+    },
+    {
+      "slug": "ucayali-san-martin",
+      "nombre": "Ucayali y San Martín"
+    }
+  ]
+}

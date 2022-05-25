@@ -1,0 +1,369 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Amazonas",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -78.196,
+                -4.4111
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Áncash",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -78.3175,
+                -9.5302
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Apurímac",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -73.0119,
+                -14.0191
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Arequipa",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -73.039,
+                -16.4052
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Ayacucho",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -74.3459,
+                -14.1737
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Cajamarca",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -78.9995,
+                -5.9705
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Callao",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -77.1115,
+                -12.0795
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Cusco",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -72.4393,
+                -12.3451
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Huancavelica",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -75.3459,
+                -13.1737
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Huánuco",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -75.985,
+                -9.3222
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Ica",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -76.059,
+                -14.1296
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Junín",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -75.57,
+                -11.4152
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "La Libertad",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -78.7589,
+                -8.2645
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Lambayeque",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -79.7186,
+                -6.3701
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Ucayali",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -73.983,
+                -9.5344
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Tumbes",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -80.4873,
+                -3.5831
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Tacna",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -70.1466,
+                -17.5387
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "San Martín",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -76.996,
+                -7.4111
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Puno",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -69.6413,
+                -14.2874
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Piura",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -80.5099,
+                -4.9655
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Pasco",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -75.676,
+                -10.4469
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Moquegua",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -70.8466,
+                -16.9387
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Madre De Dios",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -70.6139,
+                -11.2169
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Loreto",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -73.383,
+                -3.0344
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Lima Metropolitana",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -76.7842,
+                -12.5199
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "FacilityName": "Lima",
+            "Comments": ""
+        },
+        "geometry": {
+        "type": "Point",
+            "coordinates": [
+                -77.0333,
+                -12.0500
+            ]
+        }
+    }    
+    ]
+}

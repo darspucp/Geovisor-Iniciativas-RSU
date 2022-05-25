@@ -1,0 +1,86 @@
+{
+  "departamentos": [
+    { "slug": "amazonas", "nombre": "Amazonas", "lat": -5.071, "lng": -78.055 },
+    { "slug": "ancash", "nombre": "Áncash", "lat": -9.408, "lng": -77.67 },
+    {
+      "slug": "apurimac",
+      "nombre": "Apurímac",
+      "lat": -14.028,
+      "lng": -72.975
+    },
+
+    {
+      "slug": "arequipa",
+      "nombre": "Arequipa",
+      "lat": -15.843,
+      "lng": -72.476
+    },
+    {
+      "slug": "ayacucho",
+      "nombre": "Ayacucho",
+      "lat": -14.089,
+      "lng": -74.084
+    },
+    {
+      "slug": "cajamarca",
+      "nombre": "Cajamarca",
+      "lat": -6.432,
+      "lng": -78.746
+    },
+    { "slug": "callao", "nombre": "Callao", "lat": -11.94, "lng": -77.126 },
+    { "slug": "cusco", "nombre": "Cusco", "lat": -13.188, "lng": -72.169 },
+    {
+      "slug": "huancavelica",
+      "nombre": "Huancavelica",
+      "lat": -13.024,
+      "lng": -75.003
+    },
+    { "slug": "huanuco", "nombre": "Huánuco", "lat": -9.419, "lng": -76.03 },
+    { "slug": "ica", "nombre": "Ica", "lat": -14.234, "lng": -75.574 },
+    { "slug": "junin", "nombre": "Junín", "lat": -11.538, "lng": -74.879 },
+    {
+      "slug": "la_libertad",
+      "nombre": "La Libertad",
+      "lat": -7.921,
+      "lng": -78.368
+    },
+    {
+      "slug": "lambayeque",
+      "nombre": "Lambayeque",
+      "lat": -6.352,
+      "lng": -79.823
+    },
+    { "slug": "ucayali", "nombre": "Ucayali", "lat": -9.6, "lng": -73.435 },
+    { "slug": "tumbes", "nombre": "Tumbes", "lat": -3.856, "lng": -80.545 },
+    { "slug": "tacna", "nombre": "Tacna", "lat": -17.645, "lng": -70.277 },
+    {
+      "slug": "san_martin",
+      "nombre": "San Martín",
+      "lat": -7.036,
+      "lng": -76.716
+    },
+    { "slug": "puno", "nombre": "Puno", "lat": -15.181, "lng": -70.071 },
+    { "slug": "piura", "nombre": "Piura", "lat": -5.132, "lng": -80.334 },
+    { "slug": "pasco", "nombre": "Pasco", "lat": -10.399, "lng": -75.3 },
+    { "slug": "moquegua", "nombre": "Moquegua", "lat": -16.86, "lng": -70.838 },
+    {
+      "slug": "madre_de_dios",
+      "nombre": "Madre de Dios",
+      "lat": -11.981,
+      "lng": -70.534
+    },
+    { "slug": "loreto", "nombre": "Loreto", "lat": -4.121, "lng": -74.427 },
+    {
+      "slug": "lima_metropolitana",
+      "nombre": "Lima Metropolitana",
+      "lat": -12.086,
+      "lng": -76.917
+    },
+    {
+      "slug": "lima_region",
+      "nombre": "Lima Región",
+      "lat": -11.767,
+      "lng": -76.603
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+.post_descripcion {
+  .subtitulo_seccion {
+    color: #c3094a;
+    font-family: RobotoBold;
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 2.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 2.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 3.5rem;
+      margin-bottom: 4.5rem;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 3.75rem;
+      margin-bottom: 5.5rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .seccion {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 6.5rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 6.5rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .contenedor_no_texto {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: 3.5rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      margin-top: 6.5rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .contenedor_datos {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      padding: 3rem 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 4rem 8rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      padding: 8rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .header {
+    background-color: #c3094a;
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      padding: 3rem 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 3.5rem 8rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      padding: 4.5rem 8rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+
+    .titulo {
+      color: white;
+      font-family: TTNormsProBold;
+
+      @media (min-width: 320px) {
+      }
+
+      @media (min-width: 576px) {
+      }
+
+      @media (min-width: 768px) {
+      }
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        font-size: 1.8rem;
+      }
+
+      @media (min-width: 1024px) {
+        width: 80%;
+        font-size: 2.5rem;
+      }
+
+      @media (min-width: 1200px) {
+      }
+
+      @media (min-width: 1440px) {
+        width: 70%;
+        font-size: 3rem;
+      }
+
+      @media (min-width: 1920px) {
+        width: 70%;
+        font-size: 4rem;
+      }
+
+      @media (min-width: 2560px) {
+      }
+    }
+  }
+  .icono_datos {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      width: 35%;
+      margin-bottom: 1.25rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 55%;
+      margin-bottom: 2.75rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      width: 55%;
+      margin-bottom: 2.75rem;
+    }
+
+    @media (min-width: 1920px) {
+      width: 45%;
+      margin-bottom: 2.75rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .icono_datos_indicador {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      width: 12.5rem;
+      margin-right: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 12.5rem;
+      margin-right: 1rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      width: 20rem;
+      margin-right: 1rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .contenedor_indicador {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 5rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .contenedor_detalle {
+    background-color: #c3094a;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    & p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    div {
+      width: 80%;
+    }
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      padding: 3rem;
+      border-radius: 2rem;
+      margin-right: 0rem;
+      margin-bottom: 2rem;
+      height: 35vh;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 3rem;
+      border-radius: 2rem;
+      margin-right: 0rem;
+      margin-bottom: 2rem;
+      height: 25vh;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      padding: 3rem;
+      border-radius: 3rem;
+      margin-right: 0rem;
+      margin-bottom: 6rem;
+      height: 30vh;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+
+    strong {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+  .fila_socio_territorial {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+}

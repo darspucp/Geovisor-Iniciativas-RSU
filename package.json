@@ -1,0 +1,38 @@
+{
+  "name": "web_mapa_usuarios",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "14.x",
+    "npm": "6.14.10"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "cross-env NODE_OPTIONS='--max-old-space-size=8192' next build",
+    "start": "next start -p $PORT",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^5.1.0",
+    "classnames": "^2.3.1",
+    "cross-env": "^7.0.3",
+    "html-react-parser": "^1.2.8",
+    "jquery": "^3.6.0",
+    "mapbox-gl": "^2.3.0",
+    "next": "11.0.0",
+    "next-circular-dependency": "^1.0.1",
+    "overlayscrollbars": "^1.13.1",
+    "overlayscrollbars-react": "^0.2.3",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-dom": "17.0.2",
+    "react-slick": "^0.28.1",
+    "sass": "^1.35.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.0"
+  }
+}

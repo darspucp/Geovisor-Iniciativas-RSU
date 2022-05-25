@@ -1,0 +1,1136 @@
+/* ///////////////////////////////////// COLORES ///////////////////////////////////// */
+@use "sass:list";
+
+$colorPrincipal: #c3094a; // Rojo
+$colorSecundario: #042354; // Azul
+$colorTextoRegular: #212121;
+$coloresOds: #e32330, #d7a81a, #209a45, #cb2738, #e8412e, #01a9da, #0b548b,
+  #9b273e, #ed6f25, #df2988, #f7a51c, #d39422, #4a7d42, #017abd, #5bb13c,
+  #0b548b, #213d6d;
+
+@for $i from 1 through 17 {
+  .color_ods_#{$i} {
+    background-color: list.nth($coloresOds, $i);
+  }
+}
+
+.texto_blanco {
+  color: white !important;
+}
+
+.texto_color_principal {
+  color: $colorPrincipal;
+}
+
+.texto_color_secundario {
+  color: $colorSecundario;
+}
+
+/* ///////////////////////////////////// COLORES ///////////////////////////////////// */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ///////////////////////////////////// FUENTES ///////////////////////////////////// */
+
+@font-face {
+  font-family: TTNormsProBold;
+  src: url("/fonts/TTNormsProBold.otf");
+}
+
+@font-face {
+  font-family: TTNormsProLight;
+  src: url("/fonts/TTNormsProLight.otf");
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url("/fonts/Roboto-Light.ttf");
+}
+
+/* ///////////////////////////////////// FUENTES ///////////////////////////////////// */
+
+/* /////////////////////////////////// TIPOGRAFIA //////////////////////////////////// */
+
+.titulo_medium {
+  font-size: 2.25rem;
+}
+
+@mixin titulo_home {
+  font-family: TTNormsProBold;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 8.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 12.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin titulo_seccion {
+  color: $colorSecundario;
+  font-family: TTNormsProBold;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 7.5rem;
+    margin-bottom: 4.5rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_regular {
+  color: $colorTextoRegular;
+  font-family: RobotoLight;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    line-height: 1.5;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 1200px) {
+    line-height: 1.5;
+    font-size: 2.75rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 1440px) {
+    line-height: 1.5;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1920px) {
+    line-height: 1.5;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_detalle {
+  color: $colorTextoRegular;
+  font-family: RobotoLight;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 3.5rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_card_interno {
+  font-family: RobotoLight;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    line-height: 1.65;
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 3.25rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_menu {
+  font-family: TTNormsProBold;
+  color: $colorSecundario;
+
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+  }
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 3.25rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin titulo_card {
+  color: $colorSecundario;
+  font-family: TTNormsProBold;
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_footer {
+  color: white;
+  font-family: RobotoLight;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 1.85rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_footer_bold {
+  color: white;
+  font-family: TTNormsProBold;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 3.25rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin titulo_boton_ambito {
+  color: white;
+  font-family: TTNormsProBold;
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.85rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 2.75rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_link_departamento {
+  color: $colorTextoRegular;
+  font-family: RobotoLight;
+  cursor: pointer;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.65rem;
+    margin-bottom: 3rem;
+
+    &:first-of-type {
+      margin-top: 4rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    &:first-of-type {
+      margin-top: 4rem;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 2.5rem;
+    margin-bottom: 4.75rem;
+
+    &:first-of-type {
+      margin-top: 6rem;
+    }
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin titulo_departamento_region {
+  text-align: center;
+  font-family: TTNormsProBold;
+  color: $colorPrincipal;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2.75rem;
+    margin-bottom: 6rem !important;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 3.5rem;
+    margin-bottom: 8rem !important;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 4rem;
+    margin-bottom: 8rem !important;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_descripcion_iniciativa {
+  font-family: RobotoLight;
+  color: $colorTextoRegular;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 2.75rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_descripcion_iniciativa_strong {
+  color: $colorTextoRegular;
+  font-family: RobotoBold;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 2rem;
+  }
+
+  @media (min-width: 1920px) {
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin texto_pie_pagina_indicador {
+  color: $colorTextoRegular;
+  font-family: RobotoLight;
+  text-align: center !important;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 1.65rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 2rem;
+    margin-bottom: 2.25rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+.titulo_home {
+  @include titulo_home();
+  color: $colorPrincipal;
+}
+
+.subtitulo_home {
+  @include titulo_home();
+  color: $colorSecundario;
+}
+
+.titulo_seccion {
+  @include titulo_seccion();
+}
+
+.texto_regular {
+  @include texto_regular();
+}
+
+.texto_detalle {
+  @include texto_detalle();
+}
+
+.texto_card_interno {
+  @include texto_card_interno();
+}
+
+.texto_menu {
+  @include texto_menu();
+}
+
+.titulo_card {
+  @include titulo_card();
+}
+
+.texto_footer {
+  @include texto_footer();
+}
+
+.texto_footer_bold {
+  @include texto_footer_bold();
+}
+
+.titulo_boton_ambito {
+  @include titulo_boton_ambito();
+}
+
+.texto_link_departamento {
+  @include texto_link_departamento();
+}
+
+.titulo_departamento_region {
+  @include titulo_departamento_region();
+}
+
+.texto_descripcion_iniciativa {
+  @include texto_descripcion_iniciativa();
+}
+
+.texto_descripcion_iniciativa_strong {
+  @include texto_descripcion_iniciativa_strong();
+}
+
+.texto_pie_pagina_indicador {
+  @include texto_pie_pagina_indicador();
+}
+
+/* /////////////////////////////////// TIPOGRAFIA //////////////////////////////////// */
+
+/* ////////////////////////////////// PADDINGS /////////////////////////////////// */
+
+@mixin padding-vertical {
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  @media (min-width: 1920px) {
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin padding-lateral {
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (max-width: 1024px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  @media (min-width: 1920px) {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin padding-top-only {
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 9rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 9rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 9rem;
+  }
+
+  @media (min-width: 1920px) {
+    padding-top: 3rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+@mixin padding-bottom-only {
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 9rem;
+  }
+
+  @media (min-width: 1920px) {
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+@mixin padding-vertical-footer {
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (max-width: 1024px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  @media (min-width: 1920px) {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+.padding-lateral {
+  @include padding-lateral();
+}
+
+.padding-vertical {
+  @include padding-vertical();
+}
+
+.padding-top-only {
+  @include padding-top-only();
+}
+
+.padding-bottom-only {
+  @include padding-bottom-only();
+}
+
+.padding-vertical-footer {
+  @include padding-vertical-footer();
+}
+
+.padding-xy {
+  @include padding-vertical();
+  @include padding-lateral();
+}
+
+/* ////////////////////////////////// PADDINGS /////////////////////////////////// */
+
+/* ////////////////////////////////// CONTENEDORES /////////////////////////////////// */
+
+.fondo_color_principal {
+  background-color: $colorPrincipal;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.objetivos{
+  margin-top: 30px;
+}
+
+.flex-center-center {
+  display: flex !important;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex_container_top_margin{
+  margin-top: 100px;
+}
+
+.flex_div_top_margin{
+  margin-top: 20px;
+}
+
+.search_text{
+  padding: 2rem;
+  font-size: 3rem;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2rem;
+    font-size: 3rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+  }
+
+  @media (min-width: 1920px) {
+  }
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.flex-between-center-top {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.flex-around-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-around-center-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.flex-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-column-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-center-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-column-center-start-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.flex-column-center-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contenedor_descripcion_in {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.contenedor_descripcion_out {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* ////////////////////////////////// CONTENEDORES /////////////////////////////////// */
+
+/* ////////////////////////////////// COMPONENTES REUSABLES /////////////////////////////////// */
+
+@mixin boton_accion_primaria {
+  color: white;
+  background-color: $colorPrincipal;
+  font-family: TTNormsProBold;
+
+  &:hover {
+    color: white !important;
+  }
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1.3rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.85rem;
+    padding: 1rem 2rem;
+    border-radius: 1.6rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1.6rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.5rem;
+    padding: 1.5rem 3rem;
+    border-radius: 1.6rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 3.5rem;
+    padding: 2rem 4.5rem;
+    border-radius: 3.5rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+.boton-accion-primaria {
+  @include boton_accion_primaria();
+}
+
+// SCROLLBAR //
+
+.os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  background: $colorPrincipal !important;
+  opacity: 1 !important;
+}
+
+.os-scrollbar:hover > .os-scrollbar-track > .os-scrollbar-handle {
+  background: $colorPrincipal !important;
+  opacity: 1 !important;
+}
+
+/* ////////////////////////////////// COMPONENTES REUSABLES /////////////////////////////////// */
+
+/* /////////////////////////////// MARCADOR MAPA BASE //////////////////////////////// */
+
+.marker_base_map {
+  background-image: url("/images/base_map/marker_color_principal.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.marker_base_map_seleccionado {
+  background-image: url("/images/base_map/marker_color_seleccionado.png");
+}
+
+/* /////////////////////////////// MARCADOR MAPA BASE //////////////////////////////// */

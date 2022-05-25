@@ -1,0 +1,176 @@
+.post_indicador {
+  p {
+    width: 50%;
+    text-align: center;
+  }
+  .columna_indicador {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      height: 30vh;
+      margin-bottom: 10rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .subtitulo_seccion {
+    color: #042354;
+    font-family: RobotoBold;
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 2.75rem;
+      margin-bottom: 8rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .contenedor_datos {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      padding: 8rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .header {
+    background-color: #042354;
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      padding: 4.5rem 8rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+
+    .titulo {
+      color: white;
+      font-family: TTNormsProBold;
+
+      @media (min-width: 320px) {
+      }
+
+      @media (min-width: 576px) {
+      }
+
+      @media (min-width: 768px) {
+      }
+
+      @media (min-width: 1024px) {
+      }
+
+      @media (min-width: 1200px) {
+      }
+
+      @media (min-width: 1440px) {
+        width: 70%;
+        font-size: 3rem;
+      }
+
+      @media (min-width: 1920px) {
+      }
+
+      @media (min-width: 2560px) {
+      }
+    }
+  }
+  .icono_datos {
+    margin: 0 auto;
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      width: 12rem;
+      margin-bottom: 2.75rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+}

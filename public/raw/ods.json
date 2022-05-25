@@ -1,0 +1,73 @@
+{
+  "ods": [
+    {},
+    {
+      "id": 1,
+      "nombre": "FIN DE LA POBREZA"
+    },
+    {
+      "id": 2,
+      "nombre": "HAMBRE CERO"
+    },
+    {
+      "id": 3,
+      "nombre": "SALUD Y BIENESTAR"
+    },
+    {
+      "id": 4,
+      "nombre": "EDUCACIÓN DE CALIDAD"
+    },
+    {
+      "id": 5,
+      "nombre": "IGUALDAD DE GÉNERO"
+    },
+    {
+      "id": 6,
+      "nombre": "AGUA LIMPIA Y SANEAMIENTO"
+    },
+    {
+      "id": 7,
+      "nombre": "ENERGÍA ASEQUIBLE Y NO CONTAMINANTE"
+    },
+    {
+      "id": 8,
+      "nombre": "TRABAJO DECENTE Y CRECIMIENTO"
+    },
+    {
+      "id": 9,
+      "nombre": "INDUSTRIA, INNOVACIÓN E INFRAESTRUCTURA"
+    },
+    {
+      "id": 10,
+      "nombre": "REDUCIR DESIGUALDAD"
+    },
+    {
+      "id": 11,
+      "nombre": "CIUDADES Y COMUNIDADES SOSTENIBLES"
+    },
+    {
+      "id": 12,
+      "nombre": "PRODUCCIÓN Y CONSUMO RESPONSABLES"
+    },
+    {
+      "id": 13,
+      "nombre": "ACCIÓN POR EL CLIMA"
+    },
+    {
+      "id": 14,
+      "nombre": "VIDA SUBMARINA"
+    },
+    {
+      "id": 15,
+      "nombre": "VIDA DE ECOSISTEMAS TERRESTRES"
+    },
+    {
+      "id": 16,
+      "nombre": "PAZ, JUSTICIA E INSTITUCIONES SÓLIDAS"
+    },
+    {
+      "id": 17,
+      "nombre": "ALIANZA PARA LOGRAR OBJETIVOS"
+    }
+  ]
+}

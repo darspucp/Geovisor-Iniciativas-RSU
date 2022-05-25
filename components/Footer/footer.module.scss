@@ -1,0 +1,200 @@
+$colorFondoFooter: #212121;
+
+.footer {
+  background-color: $colorFondoFooter;
+
+  .contenedor_datos_footer {
+    padding: 0;
+    width: 100%;
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 5rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .logo_dars_blanco {
+    
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      width: 10rem;
+      height: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 20rem;
+      height: 10rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 20rem;
+      height: 10rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 1440px) {
+      width: 25rem;
+      height: 10rem;
+      margin-bottom: 5rem;
+    }
+
+    @media (min-width: 1920px) {
+      width: 30rem;
+      height: 12rem;
+      margin-bottom: 6rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+
+  .contenedor_header_footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+      height: 10rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      height: 10rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 1440px) {
+      height: 10rem;
+      margin-bottom: 5rem;
+    }
+
+    @media (min-width: 1920px) {
+      height: 12rem;
+      margin-bottom: 5rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+
+  .icono_red_social {
+    margin: 0.3rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 2.25rem;
+      height: 2.25rem;
+      margin-right: 4rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 2.25rem;
+      height: 2.25rem;
+      margin-right: 4rem;
+    }
+
+    @media (min-width: 1440px) {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 3rem;
+    }
+
+    @media (min-width: 1920px) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 5rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+
+  p {
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 1440px) {
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+}
