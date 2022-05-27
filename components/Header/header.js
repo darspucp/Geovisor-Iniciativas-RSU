@@ -83,7 +83,7 @@ class Header extends React.Component {
         >
           <List disablePadding>
             <ListItem button divider>
-              <ListItemIcon><Box component={Icon} icon={"eva:home-fill"} sx={{ width: 22, height: 22 }} /></ListItemIcon>
+              <ListItemIcon><Box component={Icon} icon={"mdi:account-group"} sx={{ width: 22, height: 22 }} /></ListItemIcon>
               <Link href="https://dars.pucp.edu.pe/ ">
                 <a target="_blank" className="texto_menu_mobile">
                   Nosotros
@@ -92,7 +92,7 @@ class Header extends React.Component {
             </ListItem>
             <Divider />
             <ListItem button divider>
-              <ListItemIcon><Box component={Icon} icon={"eva:home-fill"} sx={{ width: 22, height: 22 }} /></ListItemIcon>
+              <ListItemIcon><Box component={Icon} icon={"mdi:tools"} sx={{ width: 22, height: 22 }} /></ListItemIcon>
               <Link href="https://sites.google.com/pucp.pe/proyectocajadeherramientasrsu/herramientas/herramientas-para-docentes?authuser=0">
                 <a target="_blank" className="texto_menu_mobile">
                   Caja de herramientas
