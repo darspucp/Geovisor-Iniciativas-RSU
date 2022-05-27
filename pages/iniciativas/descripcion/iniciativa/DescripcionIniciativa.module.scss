@@ -13,7 +13,7 @@
     }
 
     @media (max-width: 1024px) {
-      font-size: 2.25rem;
+      font-size: 3rem;
       margin-bottom: 1.25rem;
     }
 
@@ -179,7 +179,7 @@
 
       @media (max-width: 1024px) {
         width: 100%;
-        font-size: 1.8rem;
+        font-size: 3rem;
       }
 
       @media (min-width: 1024px) {
@@ -240,6 +240,44 @@
     @media (min-width: 2560px) {
     }
   }
+
+  .icono_datos_indicador_Objetivos {
+    flex: 30%;
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      width: 85vw;
+      margin-right: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 12.5rem;
+      margin-right: 1rem;
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+      width: 15rem;
+      margin-right: 1rem;
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+
   .icono_datos_indicador {
     @media (min-width: 320px) {
     }
@@ -251,7 +289,7 @@
     }
 
     @media (max-width: 1024px) {
-      width: 12.5rem;
+      width: 85vw;
       margin-right: 1rem;
     }
 
@@ -326,11 +364,11 @@
     }
 
     @media (max-width: 1024px) {
-      padding: 3rem;
+      padding: 0;
       border-radius: 2rem;
       margin-right: 0rem;
-      margin-bottom: 2rem;
-      height: 35vh;
+      margin-bottom: 1rem;
+      height: 25vh;
     }
 
     @media (min-width: 1024px) {

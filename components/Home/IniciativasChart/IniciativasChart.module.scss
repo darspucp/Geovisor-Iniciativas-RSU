@@ -117,6 +117,12 @@
       @media (min-width: 768px) {
       }
 
+      @media (max-width: 1024px) {
+        width: 70%;
+        text-align: left;
+        margin-left: 1rem;
+      }
+
       @media (min-width: 1024px) {
         width: 80%;
       }

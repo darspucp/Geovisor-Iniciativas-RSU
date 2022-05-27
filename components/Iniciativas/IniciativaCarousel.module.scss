@@ -44,6 +44,11 @@
     @media (min-width: 768px) {
     }
 
+    @media (max-width: 1024px) {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
     @media (min-width: 1024px) {
       font-size: 2.25rem;
       margin-bottom: 1rem;
@@ -76,6 +81,11 @@
     }
 
     @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     @media (min-width: 1024px) {
@@ -121,7 +131,7 @@
       @media (max-width: 1024px) {
         border-radius: 2rem;
         padding: 1rem 2rem;
-        font-size: 1.45rem;
+        font-size: 1.8rem;
       }
 
       @media (min-width: 1024px) {

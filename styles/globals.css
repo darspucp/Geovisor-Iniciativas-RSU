@@ -23,7 +23,9 @@ a {
 }
 
 .flex-center-center {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-content: center;
+  flex-direction: row !important;
+  flex-wrap: wrap;
 }

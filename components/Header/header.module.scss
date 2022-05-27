@@ -10,6 +10,12 @@
   @media (min-width: 768px) {
   }
 
+  @media (max-width: 1024px) {
+    height: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
   @media (min-width: 1024px) {
     height: 10rem;
   }
@@ -39,6 +45,10 @@
     }
 
     @media (min-width: 768px) {
+    }
+
+    @media (max-width: 1024px) {
+      width: 25rem;
     }
 
     @media (min-width: 1024px) {
@@ -97,6 +107,67 @@
       margin-right: 5rem;
     }
 
+    @media (min-width: 2560px) {
+    }
+  }
+
+  .menus_container {
+    @media (max-width: 1024px) {
+      visibility: hidden;
+    }
+  }
+
+  .button_menu {
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    border-radius: 30%;
+    border: 1px solid gray;
+  
+    @media (min-width: 320px) {
+    }
+  
+    @media (min-width: 576px) {
+    }
+  
+    @media (min-width: 768px) {
+    }
+  
+    @media (max-width: 1024px) {
+      width: 40px;
+      height: 40px;
+      top: 60px;
+      right: 20px;
+      padding: 5.5px;
+    }
+  
+    @media (min-width: 1024px) {
+      width: 50px;
+      height: 50px;
+      top: 20px;
+      right: 20px;
+      padding: 12.5px;
+      visibility: hidden;
+    }
+  
+    @media (min-width: 1200px) {
+    }
+  
+    @media (min-width: 1440px) {
+      width: 50px;
+      height: 50px;
+      top: 20px;
+      right: 20px;
+      padding: 12.5px;
+    }
+  
+    @media (min-width: 1920px) {
+      width: 60px;
+      height: 60px;
+      top: 20px;
+      right: 20px;
+    }
+  
     @media (min-width: 2560px) {
     }
   }

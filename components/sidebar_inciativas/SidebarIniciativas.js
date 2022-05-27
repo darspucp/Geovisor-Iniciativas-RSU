@@ -296,12 +296,12 @@ class SidebarIniciativas extends React.Component {
                   "flex_container_top_margin"
                 )}
               >
-                <label><h2>Busqueda por palabra clave</h2></label>
+                <label><h2 className={cn("texto_link_departamento")}>Busqueda por palabra clave</h2></label>
               </div>
 
               <div
                 className={cn(
-                  "flex_div_top_margin"
+                  "flex_div_top_margin_text"
                 )}
               >
                 <input 

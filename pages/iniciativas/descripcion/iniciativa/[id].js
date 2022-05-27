@@ -36,17 +36,6 @@ export default function PostDescripcion({ post }) {
                 ></div>
               </Col>
             )}
-            {/* {post.acf.ubicacion_detalle && (
-              <Col lg={6}>
-                <h2 className={cn(styles.subtitulo_seccion)}>Ubicación</h2>
-                <div
-                  className={cn("texto_descripcion_iniciativa")}
-                  dangerouslySetInnerHTML={{
-                    __html: post.acf.ubicacion_detalle,
-                  }}
-                ></div>
-              </Col>
-            )} */}
           </Row>
         </div>
         <div
@@ -220,12 +209,9 @@ export default function PostDescripcion({ post }) {
                       key={ods.label}
                       md={6}
                       lg={4}
-                      className={cn(
-                        "objetivos",
-                        "flex-center-center"
-                      )}
+                      className="flex-center-center"
                     >
-                      <div className={cn(styles.icono_datos_indicador, "objetivos")}>
+                      <div className={cn(styles.icono_datos_indicador_Objetivos, "objetivos")}>
                         <Image
                             src={`/images/ods/${ods.value}.png`}
                             width={100}
@@ -233,8 +219,8 @@ export default function PostDescripcion({ post }) {
                             objectFit="contain"
                             layout="responsive"
                             alt="icono-mapa"
-                          ></Image>
-                        </div>
+                        />
+                      </div>
                     </Col>
                   );
                 })}
@@ -376,6 +362,7 @@ export default function PostDescripcion({ post }) {
                 </p>
               </div>
             </Col>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Col
               lg={4}
               className={cn(

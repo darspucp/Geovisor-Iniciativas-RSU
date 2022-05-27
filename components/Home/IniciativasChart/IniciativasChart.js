@@ -7,11 +7,11 @@ import styles from "./IniciativasChart.module.scss";
 
 class IniciativasChart extends React.Component {
   datos = [
-    { numero: "3", descripcion: "Nacionales" },
-    { numero: "86", descripcion: "Lima Metropolitana y Callao" },
-    { numero: "36", descripcion: "Costa" },
-    { numero: "43", descripcion: "Los Andes" },
-    { numero: "21", descripcion: "Amazonía" },
+    { numero: "3 ", descripcion: "Nacionales" },
+    { numero: "86 ", descripcion: "Lima Metropolitana y Callao" },
+    { numero: "36 ", descripcion: "Costa" },
+    { numero: "43 ", descripcion: "Los Andes" },
+    { numero: "21 ", descripcion: "Amazonía" },
   ];
 
   generarDatos = () => {
@@ -22,10 +22,10 @@ class IniciativasChart extends React.Component {
           key={dato.numero + index}
         >
           <h3 className={cn(styles.numero_dato, "texto_color_principal")}>
-            {dato.numero}
+            {`${dato.numero}`}
           </h3>
           <p className={cn(styles.descripcion, "texto_detalle")}>
-            {dato.descripcion}
+            {`  ${dato.descripcion}`}
           </p>
         </div>
       );

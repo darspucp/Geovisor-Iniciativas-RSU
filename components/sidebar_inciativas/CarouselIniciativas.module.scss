@@ -1,6 +1,11 @@
 .contenedor_iniciativa_carousel {
   height: 50% !important;
   width: 100% !important;
+
+  @media (max-width: 1024px) {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
 }
 
 .slick_slider {
