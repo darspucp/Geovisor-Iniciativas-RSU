@@ -306,7 +306,7 @@ class SidebarIniciativas extends React.Component {
               >
                 <input 
                   type="text"
-                  placeholder="Type your search key"
+                  placeholder="Ingrese palabra clave"
                   className={cn(
                     "search_text"
                   )}
@@ -377,7 +377,7 @@ class SidebarIniciativas extends React.Component {
                 ></CarouselIniciativas>
               ) : (
                 <h1 className="titulo_departamento_region">
-                  No Result
+                  No se encontaron resultados
                 </h1>
               )}
             </>

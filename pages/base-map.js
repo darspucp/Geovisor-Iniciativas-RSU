@@ -166,7 +166,7 @@ class BaseMap extends React.Component {
           ['get', 'FacilityName'],
           { 'font-scale': 1.1 }
         ],
-        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold']
+        'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular']
         }
       });
 
