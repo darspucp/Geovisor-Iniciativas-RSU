@@ -112,7 +112,8 @@ class BaseMap extends React.Component {
         },
       });
 
-      const popup = new mapboxgl.Popup({
+      //FUNCION COMENTAD TEMPORALMENTE
+      /*const popup = new mapboxgl.Popup({
         closeButton: true,
         closeOnClick: true
       });
@@ -125,7 +126,7 @@ class BaseMap extends React.Component {
           const mapData = await getAllIniciativasAllDataFromServer();
           const description = `<div><h3>${mapData[0].acf.titulo}</h3></div><div><a target="_blank" href='/iniciativas/descripcion/iniciativa/${mapData[0].id}'>Ver iniciativa</a></div>`;
           popup.setLngLat([e.lngLat.lng, e.lngLat.lat]).setHTML(description).addTo(map);
-      });
+      });*/
 
       map.loadImage(
         "/images/base_map/marker_campus_pucp.png",
