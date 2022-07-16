@@ -325,7 +325,7 @@ class SidebarIniciativas extends React.Component {
                   icon={false}
                   onClick={async () => {
                     let iniciativasNacionales =
-                    await getAllIniciativasByCategoryNameFromServer(this.state.search_text);
+                    await getIniciativasFilterByKeyWord(this.state.search_text);
                     
                     this.setState({
                       iniciativasCarousel: iniciativasNacionales,
