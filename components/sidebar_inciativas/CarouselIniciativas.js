@@ -40,6 +40,7 @@ class CarouselIniciativas extends React.Component {
       infinite: true,
       speed: 500,
       rows: 2,
+      arrows: true,
       slidesPerRow: 1,
       slidesToShow: 1,
       slidesToScroll: 1,

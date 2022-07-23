@@ -9,6 +9,8 @@ import {
   getAllIniciativasByCategoryFromServer,
   getAllIniciativasByCategoryNameFromServer,
   fetchPostsByCategory,
+  getIniciativasFilterByKeyWord,
+  getIniciativasByKeyWord,
 } from "../../lib/utils";
 
 import { AMBITO_NACIONAL_SLUG, CENTRO_PERU } from "../../lib/constants";
@@ -126,7 +128,7 @@ class SidebarIniciativas extends React.Component {
               let iniciativasNacionales =
                 await getAllIniciativasByCategoryFromServer("nacional");
               this.setState({
-                iniciativasCarousel: iniciativasNacionales,
+                //iniciativasCarousel: iniciativasNacionales,
                 etapaFlujo: 3,
                 ambitoSelected: ambito.titulo_boton,
                 idAmbitoSelected: ambito.id,
@@ -325,10 +327,10 @@ class SidebarIniciativas extends React.Component {
                   icon={false}
                   onClick={async () => {
                     let iniciativasNacionales =
-                    await getIniciativasFilterByKeyWord(this.state.search_text);
-                    
+                    await getAllIniciativasByCategoryNameFromServer(this.state.search_text);
+                   //ver objetos filtrados  console.log(iniciativasNacionales);
                     this.setState({
-                      iniciativasCarousel: iniciativasNacionales,
+                      //iniciativasCarousel: iniciativasNacionales,
                       etapaFlujo: 3,
                       ambitoSelected: 'Ámbito nacional',
                       idAmbitoSelected: '4',
@@ -357,8 +359,8 @@ class SidebarIniciativas extends React.Component {
                 ></BotonAmbito>
                 {this.renderDepartamentosoRegiones(
                   this.state.ambitoSelected == "Ámbito regional"
-                    ? this.state.regionesPorAmbito
-                    : this.state.departamentosPorAmbito
+                    ? this.state.regionesPorAmbito //pasa lista de regiones
+                    : this.state.departamentosPorAmbito // o pasa lista de dptos
                 )}
               </div>
             </OverlayScrollbarsComponent>
