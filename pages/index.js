@@ -183,8 +183,11 @@ class Home extends React.Component {
               )}
             >
               <div className={cn(styles.contenedor_titulo_subtitulo)}>
+                {/*<h1 className="titulo_home">
+                  VISOR - <span className="subtitulo_home">RSU PUCP</span>{" "}
+                </h1>*/}
                 <h1 className="titulo_home">
-                  VISOR - <span className="subtitulo_home">RSU</span>{" "}
+                  VISOR <br/> <span className="subtitulo_home">RSU DESDE LA PUCP</span>{" "}
                 </h1>
                 <p className="texto_regular">
                   Iniciativas de Responsabilidad Social Universitaria (RSU)
@@ -226,6 +229,8 @@ class Home extends React.Component {
               )}
             >
               <IniciativasChart></IniciativasChart>
+             {
+              /*
               <div className={styles.gif_iniciativas}>
                 <Image
                   src="/images/home/gif_home.gif"
@@ -236,6 +241,8 @@ class Home extends React.Component {
                   alt="gif-iniciativas"
                 ></Image>
               </div>
+              */
+             } 
             </div>
           </div>
           <div className={cn("padding-xy")}>

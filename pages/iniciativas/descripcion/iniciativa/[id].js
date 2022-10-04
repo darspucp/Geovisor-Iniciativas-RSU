@@ -96,25 +96,29 @@ export default function PostDescripcion({ post }) {
                     </div>
                   </Col>
                   <Col lg={8}>
-                    <p className={cn("texto_descripcion_iniciativa")}>
-                      <strong className={"texto_descripcion_iniciativa_strong"}>
-                        Población censada :
+                  <div
+                    className={cn("texto_descripcion_iniciativa")}
+                    >
+                    <p>
+                      <strong>
+                        Población censada:{" "}
                       </strong>
                       {post.acf.datos_complementarios.poblacion}
                     </p>
 
-                    <p className={cn("texto_descripcion_iniciativa")}>
-                      <strong className={"texto_descripcion_iniciativa_strong"}>
-                        Hombres :
+                    <p>
+                      <strong>
+                        Hombres:{" "}
                       </strong>
                       {post.acf.datos_complementarios.hombres}
                     </p>
-                    <p className={cn("texto_descripcion_iniciativa")}>
-                      <strong className={"texto_descripcion_iniciativa_strong"}>
-                        Mujeres :
+                    <p>
+                      <strong>
+                        Mujeres:{" "}
                       </strong>
                       {post.acf.datos_complementarios.mujeres}
                     </p>
+                    </div>
                   </Col>
                 </Row>
                 <Row
@@ -136,27 +140,31 @@ export default function PostDescripcion({ post }) {
                     </div>
                   </Col>
                   <Col lg={8}>
-                    <p className={cn("texto_descripcion_iniciativa")}>
-                      <strong className={"texto_descripcion_iniciativa_strong"}>
-                        Viviendas inadecuadas :
+                  <div
+                    className={cn("texto_descripcion_iniciativa")}
+                    >
+                    <p>
+                      <strong>
+                        Viviendas inadecuadas:{" "}
                       </strong>
                       {post.acf.datos_complementarios.viviendas_inadecuadas}% de
                       habitantes
                     </p>
-                    <p className={cn("texto_descripcion_iniciativa")}>
-                      <strong className={"texto_descripcion_iniciativa_strong"}>
-                        Hacinamiento :
+                    <p>
+                      <strong>
+                        Hacinamiento:{" "}
                       </strong>
                       {post.acf.datos_complementarios.hacinamiento}% de
                       habitantes
                     </p>
-                    <p className={cn("texto_descripcion_iniciativa")}>
-                      <strong className={"texto_descripcion_iniciativa_strong"}>
-                        Sin servicios higiénicos :
+                    <p>
+                      <strong>
+                        Sin servicios higiénicos:{" "}
                       </strong>
                       {post.acf.datos_complementarios.servicios_higienicos}% de
                       habitantes
                     </p>
+                    </div>
                   </Col>
                 </Row>
                 <Row
@@ -178,20 +186,24 @@ export default function PostDescripcion({ post }) {
                     </div>
                   </Col>
                   <Col lg={8}>
-                    <p className={cn("texto_descripcion_iniciativa")}>
-                      <strong className={"texto_descripcion_iniciativa_strong"}>
-                        Ausentismo escolar :
+                  <div
+                    className={cn("texto_descripcion_iniciativa")}
+                    >
+                    <p>
+                      <strong>
+                        Ausentismo escolar:{" "}
                       </strong>
                       {post.acf.datos_complementarios.asistencia_escolar}% de
                       habitantes
                     </p>
-                    <p className={cn("texto_descripcion_iniciativa")}>
-                      <strong className={"texto_descripcion_iniciativa_strong"}>
-                        Dependencia económica :
+                    <p>
+                      <strong>
+                        Dependencia económica:{" "}
                       </strong>
                       {post.acf.datos_complementarios.dependencia_economica}% de
                       habitantes
                     </p>
+                  </div>
                   </Col>
                 </Row>
               </div>
@@ -343,20 +355,20 @@ export default function PostDescripcion({ post }) {
             >
               <div>
                 <p className={cn("texto_descripcion_iniciativa")}>
-                  <strong className={"texto_descripcion_iniciativa_strong"}>
-                    Categoría:
+                  <strong>
+                    Categoría:{" "}
                   </strong>
                   {` ${post.acf.datos_generales.categoria}`}
                 </p>
                 <p className={cn("texto_descripcion_iniciativa")}>
-                  <strong className={"texto_descripcion_iniciativa_strong"}>
-                    Estrategia:
+                  <strong>
+                    Estrategia:{" "}
                   </strong>
                   {` ${post.acf.datos_generales.estrategia}`}
                 </p>
                 <p className={cn("texto_descripcion_iniciativa")}>
-                  <strong className={"texto_descripcion_iniciativa_strong"}>
-                    Año:
+                  <strong>
+                    Año:{" "}
                   </strong>
                   {` ${post.acf.datos_generales.ano}`}
                 </p>
@@ -372,20 +384,20 @@ export default function PostDescripcion({ post }) {
             >
               <div>
                 <p className={cn("texto_descripcion_iniciativa")}>
-                  <strong className={"texto_descripcion_iniciativa_strong"}>
-                    Coordinador/a:
+                  <strong>
+                    Coordinador/a:{" "}
                   </strong>
                   {` ${post.acf.datos_generales.coordinadora}`}
                 </p>
                 <p className={cn("texto_descripcion_iniciativa")}>
-                  <strong className={"texto_descripcion_iniciativa_strong"}>
-                    Especialidad:
+                  <strong >
+                    Especialidad:{" "}
                   </strong>
                   {` ${post.acf.datos_generales.especialidad}`}
                 </p>
                 <p className={cn("texto_descripcion_iniciativa")}>
-                  <strong className={"texto_descripcion_iniciativa_strong"}>
-                    Contacto:
+                  <strong>
+                    Contacto:{" "}
                   </strong>
                   {` ${post.acf.datos_generales.contacto}`}
                 </p>

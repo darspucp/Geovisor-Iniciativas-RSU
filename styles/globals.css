@@ -61,3 +61,25 @@ a {
   }
 }
 
+.texto_descripcion_iniciativa p > strong{
+  color: #212121;
+    font-family: RobotoBold;
+}
+
+@media (max-width: 530px){
+  .padding-xy{
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1440px){
+  .padding-xy {
+    margin-bottom: 4rem;
+  }
+}
+
+@media(max-width: 530px){
+  .Home_titulo_subtitulo__1tF1U{
+    padding-top: 4rem;
+  }
+}

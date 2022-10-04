@@ -1,6 +1,12 @@
 module.exports = {
   reactStrictMode: true,
+    images: {
+      domains: ["admvisor-rsu.pucp.edu.pe"],
+      //formats: ["image/webp"],
+  },
 };
+
+
 
 // const CircularDependencyPlugin = require("circular-dependency-plugin");
 

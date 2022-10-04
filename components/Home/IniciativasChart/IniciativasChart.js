@@ -1,21 +1,47 @@
 import React from "react";
 import Image from "next/image";
-
 import cn from "classnames";
-
+import  { getCifrasPortada } from "../../../lib/utils";
+import  { getImageGif } from "../../../lib/utils";
 import styles from "./IniciativasChart.module.scss";
+import stylesHome from "../../../styles/Home.module.scss";
 
 class IniciativasChart extends React.Component {
-  datos = [
-    { numero: "3 ", descripcion: "Nacionales" },
-    { numero: "86 ", descripcion: "Lima Metropolitana y Callao" },
-    { numero: "36 ", descripcion: "Costa" },
-    { numero: "43 ", descripcion: "Los Andes" },
-    { numero: "21 ", descripcion: "Amazonía" },
-  ];
 
-  generarDatos = () => {
-    var datosContenido = this.datos.map((dato, index) => {
+  constructor(props){
+    super(props) 
+    this.state = {
+      data: [],
+      gif: ""
+    };
+  }
+
+
+  async getDataPortada(){
+    let result = await getCifrasPortada();
+    //console.log(result);
+      this.setState({
+        data: result
+      })
+  }
+
+  async getGifUrl(){
+    let imgGif = await getImageGif();
+   // console.log('dentro de funcion'+imgGif);
+      this.setState({
+        gif: imgGif
+      })
+  }
+
+  componentDidMount = () => {
+    this.getDataPortada();
+    this.getGifUrl();
+
+  }
+
+   generarDatos =  () => {
+    //this.getDataPortada();
+    var datosContenido = this.state.data.map((dato, index) => {
       return (
         <div
           className={cn(styles.fila_dato, "flex-start-center")}
@@ -23,6 +49,7 @@ class IniciativasChart extends React.Component {
         >
           <h3 className={cn(styles.numero_dato, "texto_color_principal")}>
             {`${dato.numero}`}
+            {}
           </h3>
           <p className={cn(styles.descripcion, "texto_detalle")}>
             {`  ${dato.descripcion}`}
@@ -33,9 +60,10 @@ class IniciativasChart extends React.Component {
 
     return datosContenido;
   };
-
   render() {
+    console.log('estado gif'+this.state.gif);
     return (
+      <>
       <div style={{ position: "relative" }}>
         <div className={cn(styles.contenedor_datos)}>{this.generarDatos()}</div>
         <div className={styles.contenedor_pin}>
@@ -49,6 +77,17 @@ class IniciativasChart extends React.Component {
           ></Image>
         </div>
       </div>
+       <div className={stylesHome.gif_iniciativas}>
+       <Image
+         src={`${this.state.gif}`}
+         width={2480}
+         height={3507}
+         layout="responsive"
+         objectFit="contain"
+         alt="gif-iniciativas"
+       ></Image>
+     </div>
+    </>
     );
   }
 }
