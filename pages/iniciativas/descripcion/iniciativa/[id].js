@@ -2,23 +2,15 @@ import Image from "next/image";
 import axios from "axios";
 import cn from "classnames";
 import { INICIATIVAS_API_URL } from "../../../../lib/constants";
-import ODS from "../../../../components/ods/ODS";
 import { Row, Col } from "react-bootstrap";
-import { getNumPosts, fetchPosts } from "../../../../lib/utils";
 
 import styles from "./DescripcionIniciativa.module.scss";
-
-const getAllPosts = async () => {
-  const numberPages = await getNumPosts();
-  const totalPosts = await fetchPosts(numberPages);
-  return totalPosts;
-};
 
 export default function PostDescripcion({ post }) {
   return (
     <div className={styles.post_descripcion}>
       <div className={cn(styles.header)}>
-        <h1 className={styles.titulo}>{post.acf.titulo}</h1>
+        <h1 className={styles.titulo}>{post.titulo}</h1>
       </div>
       <div className={cn(styles.contenedor_datos)}>
         <div
@@ -26,12 +18,12 @@ export default function PostDescripcion({ post }) {
         >
           <Row>
             <h2 className={cn(styles.subtitulo_seccion)}>Descripción</h2>
-            {post.acf.descripcion && (
+            {post.descripcion && (
               <Col lg={12}>
                 <div
                   className={cn("texto_descripcion_iniciativa")}
                   dangerouslySetInnerHTML={{
-                    __html: post.acf.descripcion,
+                    __html: post.descripcion,
                   }}
                 ></div>
               </Col>
@@ -72,17 +64,18 @@ export default function PostDescripcion({ post }) {
                     <div
                       className={cn("texto_descripcion_iniciativa")}
                       dangerouslySetInnerHTML={{
-                        __html: post.acf.ubicacion_detalle,
+                        __html: post.ubicacion_detalle,
                       }}
                     ></div>
                   </Col>
                 </Row>
-                <Row
+                {(post.poblacion || post.hombres || post.mujeres) && <Row
                   className={cn(
                     "flex-center-center",
                     styles.fila_socio_territorial
                   )}
                 >
+
                   <Col lg={4} className="flex-center-center">
                     <div className={cn(styles.icono_datos)}>
                       <Image
@@ -96,32 +89,35 @@ export default function PostDescripcion({ post }) {
                     </div>
                   </Col>
                   <Col lg={8}>
-                  <div
-                    className={cn("texto_descripcion_iniciativa")}
+                    <div
+                      className={cn("texto_descripcion_iniciativa")}
                     >
-                    <p>
-                      <strong>
-                        Población censada:{" "}
-                      </strong>
-                      {post.acf.datos_complementarios.poblacion}
-                    </p>
+                      {post.poblacion && <p>
+                        <strong>
+                          Población censada:{" "}
+                        </strong>
+                        {post.poblacion}
+                      </p>}
 
-                    <p>
-                      <strong>
-                        Hombres:{" "}
-                      </strong>
-                      {post.acf.datos_complementarios.hombres}
-                    </p>
-                    <p>
-                      <strong>
-                        Mujeres:{" "}
-                      </strong>
-                      {post.acf.datos_complementarios.mujeres}
-                    </p>
+                      {post.hombres && <p>
+                        <strong>
+                          Hombres:{" "}
+                        </strong>
+                        {post.hombres}
+                      </p>}
+
+                      {post.mujeres && <p>
+                        <strong>
+                          Mujeres:{" "}
+                        </strong>
+                        {post.mujeres}
+                      </p>}
                     </div>
                   </Col>
-                </Row>
-                <Row
+                </Row>}
+
+
+                {(post.viviendas_inadecuadas || post.hacinamiento || post.servicios_higienicos) && <Row
                   className={cn(
                     "flex-center-center",
                     styles.fila_socio_territorial
@@ -140,34 +136,39 @@ export default function PostDescripcion({ post }) {
                     </div>
                   </Col>
                   <Col lg={8}>
-                  <div
-                    className={cn("texto_descripcion_iniciativa")}
+                    <div
+                      className={cn("texto_descripcion_iniciativa")}
                     >
-                    <p>
-                      <strong>
-                        Viviendas inadecuadas:{" "}
-                      </strong>
-                      {post.acf.datos_complementarios.viviendas_inadecuadas}% de
-                      habitantes
-                    </p>
-                    <p>
-                      <strong>
-                        Hacinamiento:{" "}
-                      </strong>
-                      {post.acf.datos_complementarios.hacinamiento}% de
-                      habitantes
-                    </p>
-                    <p>
-                      <strong>
-                        Sin servicios higiénicos:{" "}
-                      </strong>
-                      {post.acf.datos_complementarios.servicios_higienicos}% de
-                      habitantes
-                    </p>
+                      {post.viviendas_inadecuadas && <p>
+                        <strong>
+                          Viviendas inadecuadas:{" "}
+                        </strong>
+                        {post.viviendas_inadecuadas}% de
+                        habitantes
+                      </p>}
+
+                      {post.hacinamiento && <p>
+                        <strong>
+                          Hacinamiento:{" "}
+                        </strong>
+                        {post.hacinamiento}% de
+                        habitantes
+                      </p>}
+
+
+                      {post.servicios_higienicos && <p>
+                        <strong>
+                          Sin servicios higiénicos:{" "}
+                        </strong>
+                        {post.servicios_higienicos}% de
+                        habitantes
+                      </p>}
+
                     </div>
                   </Col>
-                </Row>
-                <Row
+                </Row>}
+
+                {(post.asistencia_escolar || post.dependencia_economica) && <Row
                   className={cn(
                     "flex-center-center",
                     styles.fila_socio_territorial
@@ -186,26 +187,30 @@ export default function PostDescripcion({ post }) {
                     </div>
                   </Col>
                   <Col lg={8}>
-                  <div
-                    className={cn("texto_descripcion_iniciativa")}
+                    <div
+                      className={cn("texto_descripcion_iniciativa")}
                     >
-                    <p>
-                      <strong>
-                        Ausentismo escolar:{" "}
-                      </strong>
-                      {post.acf.datos_complementarios.asistencia_escolar}% de
-                      habitantes
-                    </p>
-                    <p>
-                      <strong>
-                        Dependencia económica:{" "}
-                      </strong>
-                      {post.acf.datos_complementarios.dependencia_economica}% de
-                      habitantes
-                    </p>
-                  </div>
+
+                      {post.asistencia_escolar && <p>
+                        <strong>
+                          Ausentismo escolar:{" "}
+                        </strong>
+                        {post.asistencia_escolar}% de
+                        habitantes
+                      </p>}
+
+                      {post.dependencia_economica && <p>
+                        <strong>
+                          Dependencia económica:{" "}
+                        </strong>
+                        {post.dependencia_economica}% de
+                        habitantes
+                      </p>}
+                    </div>
                   </Col>
-                </Row>
+                </Row>}
+
+
               </div>
             </Col>
             <Col lg={6}>
@@ -215,7 +220,7 @@ export default function PostDescripcion({ post }) {
               <Row
                 className={cn(styles.contenedor_no_texto, "flex-center-center")}
               >
-                {post.acf.ODS.objetivos.map((ods, index) => {
+                {post?.objetivos.map((ods, index) => {
                   return (
                     <Col
                       key={ods.label}
@@ -225,12 +230,12 @@ export default function PostDescripcion({ post }) {
                     >
                       <div className={cn(styles.icono_datos_indicador_Objetivos, "objetivos")}>
                         <Image
-                            src={`/images/ods/${ods.value}.png`}
-                            width={100}
-                            height={100}
-                            objectFit="contain"
-                            layout="responsive"
-                            alt="icono-mapa"
+                          src={`/images/ods/${ods.value}.png`}
+                          width={100}
+                          height={100}
+                          objectFit="contain"
+                          layout="responsive"
+                          alt="icono-mapa"
                         />
                       </div>
                     </Col>
@@ -240,107 +245,130 @@ export default function PostDescripcion({ post }) {
             </Col>
           </Row>
         </div>
-        <div className={cn(styles.seccion, styles.seccion_indicadores)}>
-          <h2 className={cn(styles.subtitulo_seccion)}>
-            Indicadores regionales
-          </h2>
-          <Row className={cn("flex-center-center", styles.contenedor_no_texto)}>
-            <Col
-              lg={4}
-              className={cn("flex-center-center", styles.contenedor_indicador)}
-            >
-              <div className={cn(styles.icono_datos_indicador)}>
-                <Image
-                  src="/images/iniciativas/descripcion/icono_mapa.png"
-                  width={100}
-                  height={100}
-                  objectFit="contain"
-                  layout="responsive"
-                  alt="icono-mapa"
-                ></Image>
-              </div>
-              <p className={cn("texto_descripcion_iniciativa")}>
-                {post.acf.indicadores.porcentaje_territorio_nacional}% del
-                territorio nacional
-              </p>
-            </Col>
-            <Col
-              lg={4}
-              className={cn("flex-center-center", styles.contenedor_indicador)}
-            >
-              <div className={cn(styles.icono_datos_indicador)}>
-                <Image
-                  src="/images/iniciativas/descripcion/icono_poblacion_azul.png"
-                  width={100}
-                  height={100}
-                  objectFit="contain"
-                  layout="responsive"
-                  alt="icono-poblacion-azul"
-                ></Image>
-              </div>
-              <p className={cn("texto_descripcion_iniciativa")}>
-                {post.acf.indicadores.porcentaje_poblacion_nacional}% de la
-                población nacional
-              </p>
-            </Col>
-            <Col
-              lg={4}
-              className={cn("flex-center-center", styles.contenedor_indicador)}
-            >
-              <div className={cn(styles.icono_datos_indicador)}>
-                <Image
-                  src="/images/iniciativas/descripcion/icono_balance.png"
-                  width={100}
-                  height={100}
-                  objectFit="contain"
-                  layout="responsive"
-                  alt="icono-balance"
-                ></Image>
-              </div>
-              <p className={cn("texto_descripcion_iniciativa")}>
-                {post.acf.indicadores.porcentaje_habitantes_pobres}% de
-                habitantes son pobres *
-              </p>
-            </Col>
-            <Col
-              lg={4}
-              className={cn("flex-center-center", styles.contenedor_indicador)}
-            >
-              <div className={cn(styles.icono_datos_indicador)}>
-                <Image
-                  src="/images/iniciativas/descripcion/icono_servicios.png"
-                  width={160}
-                  height={160}
-                  objectFit="contain"
-                  layout="responsive"
-                  alt="icono-servicios"
-                ></Image>
-              </div>
-              <p className={cn("texto_descripcion_iniciativa")}>
-                {post.acf.indicadores.porcentaje_habitantes_sin_servicios}% de
-                habitantes no tienen todos los servicios básicos**
-              </p>
-            </Col>
-            <Col
-              lg={4}
-              className={cn("flex-center-center", styles.contenedor_indicador)}
-            >
-              <div className={cn(styles.icono_datos_indicador)}>
-                <Image
-                  src="/images/iniciativas/descripcion/icono_iniciativas.png"
-                  width={100}
-                  height={100}
-                  objectFit="contain"
-                  layout="responsive"
-                  alt="icono-iniciativas"
-                ></Image>
-              </div>
-              <p className={cn("texto_descripcion_iniciativa")}>
-                {post.acf.indicadores.numero_iniciativas_rsu} iniciativas RSU
-              </p>
-            </Col>
-          </Row>
-        </div>
+        {(post.porcentaje_territorio_nacional ||
+          post.porcentaje_poblacion_nacional ||
+          post.porcentaje_habitantes_pobres || post.porcentaje_habitantes_sin_servicios ||
+          post.numero_iniciativas_rsu) && <div className={cn(styles.seccion, styles.seccion_indicadores)}>
+            <h2 className={cn(styles.subtitulo_seccion)}>
+              Indicadores regionales
+            </h2>
+            <Row className={cn("flex-center-center", styles.contenedor_no_texto)}>
+              {post.porcentaje_territorio_nacional && <Col
+                lg={4}
+                className={cn("flex-center-center", styles.contenedor_indicador)}
+              >
+                <div className={cn(styles.icono_datos_indicador)}>
+                  <Image
+                    src="/images/iniciativas/descripcion/icono_mapa.png"
+                    width={100}
+                    height={100}
+                    objectFit="contain"
+                    layout="responsive"
+                    alt="icono-mapa"
+                  ></Image>
+                </div>
+
+                <p className={cn("texto_descripcion_iniciativa")}>
+                  {post.porcentaje_territorio_nacional}% del
+                  territorio nacional
+                </p>
+
+              </Col>}
+
+              {post.porcentaje_poblacion_nacional && <Col
+                lg={4}
+                className={cn("flex-center-center", styles.contenedor_indicador)}
+              >
+                <div className={cn(styles.icono_datos_indicador)}>
+                  <Image
+                    src="/images/iniciativas/descripcion/icono_poblacion_azul.png"
+                    width={100}
+                    height={100}
+                    objectFit="contain"
+                    layout="responsive"
+                    alt="icono-poblacion-azul"
+                  ></Image>
+                </div>
+
+                <p className={cn("texto_descripcion_iniciativa")}>
+                  {post.porcentaje_poblacion_nacional}% de la
+                  población nacional
+                </p>
+
+              </Col>}
+
+              {post.porcentaje_habitantes_pobres && <Col
+                lg={4}
+                className={cn("flex-center-center", styles.contenedor_indicador)}
+              >
+                <div className={cn(styles.icono_datos_indicador)}>
+                  <Image
+                    src="/images/iniciativas/descripcion/icono_balance.png"
+                    width={100}
+                    height={100}
+                    objectFit="contain"
+                    layout="responsive"
+                    alt="icono-balance"
+                  ></Image>
+                </div>
+
+                <p className={cn("texto_descripcion_iniciativa")}>
+                  {post.porcentaje_habitantes_pobres}% de
+                  habitantes son pobres *
+                </p>
+
+              </Col>}
+
+
+              {post.porcentaje_habitantes_sin_servicios && <Col
+                lg={4}
+                className={cn("flex-center-center", styles.contenedor_indicador)}
+              >
+                <div className={cn(styles.icono_datos_indicador)}>
+                  <Image
+                    src="/images/iniciativas/descripcion/icono_servicios.png"
+                    width={160}
+                    height={160}
+                    objectFit="contain"
+                    layout="responsive"
+                    alt="icono-servicios"
+                  ></Image>
+                </div>
+
+                <p className={cn("texto_descripcion_iniciativa")}>
+                  {post.porcentaje_habitantes_sin_servicios}% de
+                  habitantes no tienen todos los servicios básicos**
+                </p>
+
+              </Col>}
+
+
+              {post.numero_iniciativas_rsu && <Col
+                lg={4}
+                className={cn("flex-center-center", styles.contenedor_indicador)}
+              >
+                <div className={cn(styles.icono_datos_indicador)}>
+                  <Image
+                    src="/images/iniciativas/descripcion/icono_iniciativas.png"
+                    width={100}
+                    height={100}
+                    objectFit="contain"
+                    layout="responsive"
+                    alt="icono-iniciativas"
+                  ></Image>
+                </div>
+
+                <p className={cn("texto_descripcion_iniciativa")}>
+                  {post.numero_iniciativas_rsu} iniciativas RSU
+                </p>
+
+              </Col>}
+
+            </Row>
+          </div>}
+
+
+
         <div className={cn(styles.seccion, styles.seccion_detalles_iniciativa)}>
           <h2 className={cn(styles.subtitulo_seccion)}>
             Detalles de la iniciativa
@@ -358,19 +386,19 @@ export default function PostDescripcion({ post }) {
                   <strong>
                     Categoría:{" "}
                   </strong>
-                  {` ${post.acf.datos_generales.categoria}`}
+                  {` ${post.categoria}`}
                 </p>
                 <p className={cn("texto_descripcion_iniciativa")}>
                   <strong>
                     Estrategia:{" "}
                   </strong>
-                  {` ${post.acf.datos_generales.estrategia}`}
+                  {` ${post.estrategia}`}
                 </p>
                 <p className={cn("texto_descripcion_iniciativa")}>
                   <strong>
                     Año:{" "}
                   </strong>
-                  {` ${post.acf.datos_generales.ano}`}
+                  {` ${post.ano}`}
                 </p>
               </div>
             </Col>
@@ -387,19 +415,19 @@ export default function PostDescripcion({ post }) {
                   <strong>
                     Coordinador/a:{" "}
                   </strong>
-                  {` ${post.acf.datos_generales.coordinadora}`}
+                  {` ${post.coordinadora}`}
                 </p>
                 <p className={cn("texto_descripcion_iniciativa")}>
                   <strong >
                     Especialidad:{" "}
                   </strong>
-                  {` ${post.acf.datos_generales.especialidad}`}
+                  {` ${post.especialidad}`}
                 </p>
                 <p className={cn("texto_descripcion_iniciativa")}>
                   <strong>
                     Contacto:{" "}
                   </strong>
-                  {` ${post.acf.datos_generales.contacto}`}
+                  {` ${post.contacto}`}
                 </p>
               </div>
             </Col>
@@ -430,32 +458,10 @@ export default function PostDescripcion({ post }) {
   );
 }
 
-// export async function getStaticPaths() {
-//   const posts = await getAllPosts();
-
-//   const paths = posts.map((post) => ({
-//     params: {
-//       id: post.id.toString(),
-//     },
-//   }));
-
-//   return { paths, fallback: false };
-// }
-
-// export async function getStaticProps({ params }) {
-//   const res = await axios.get(`${INICIATIVAS_API_URL}/${params.id}`);
-//   const post = res.data;
-
-//   return {
-//     props: { post: post },
-//   };
-// }
 
 export async function getServerSideProps({ params }) {
-  const res = await axios.get(`${INICIATIVAS_API_URL}/${params.id}`);
-  const post = res.data;
-
+  const { data } = await axios.get(`https://visor-rsu.pucp.edu.pe/api/iniciativa/${params.id}`);
   return {
-    props: { post: post },
+    props: { post: data },
   };
 }

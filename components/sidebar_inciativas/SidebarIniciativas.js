@@ -223,6 +223,7 @@ class SidebarIniciativas extends React.Component {
           paint: {
             "fill-color": "#9a3255",
             "fill-outline-color": "rgba(0,0,0,0.35)",
+            'fill-opacity': 0.2
           },
         });
       } else {
@@ -233,6 +234,7 @@ class SidebarIniciativas extends React.Component {
           paint: {
             "fill-color": "#9a3255",
             "fill-outline-color": "rgba(0,0,0,0.35)",
+            'fill-opacity': 0.2
           },
         });
       }

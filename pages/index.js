@@ -195,7 +195,7 @@ class Home extends React.Component {
               </div>
 
               <Link href="/base-map">
-                <a className="boton-accion-primaria">Ver mapa</a>
+                <a className="boton-accion-primaria" target="_blank">Ver mapa</a>
               </Link>
             </div>
             <div className={styles.imagen_mapa_home}>

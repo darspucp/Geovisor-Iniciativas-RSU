@@ -4,8 +4,6 @@ import mapboxgl from "mapbox-gl";
 import departamentosJson from "../public/json/departamentos.json";
 
 import departmentLabel from "../public/json/departmentLabel.json";
-
-import iniciativasJson from "../public/json/iniciativas.json";
 import campusJson from "../public/json/campus_pucp.json";
 import $ from "jquery";
 
@@ -14,10 +12,6 @@ import Head from "next/head";
 import SidebarIniciativas from "../components/sidebar_inciativas/SidebarIniciativas";
 import stylesSidebar from "..//components/sidebar_inciativas/SidebarIniciativas.module.scss";
 import { CENTRO_PERU } from "../lib/constants";
-
-import {
-  getAllIniciativasAllDataFromServer
-} from "../lib/utils";
 
 class BaseMap extends React.Component {
   constructor(props) {
@@ -37,7 +31,7 @@ class BaseMap extends React.Component {
   async componentDidMount() {
 
     // const mapData = await getAllIniciativasAllDataFromServer();
-    
+
     // this.setState({
     //   allData: mapData,
     // });
@@ -89,44 +83,33 @@ class BaseMap extends React.Component {
             property: "hex",
           },
           "fill-outline-color": "rgba(0,0,0,0.35)",
-          'fill-opacity': 0.8
+          'fill-opacity': 0.3
         },
       }
-      // firstSymbolId,
-      // 'country-label'
       );
+
       
-      map.addSource("iniciativas", {
-        type: "geojson",
-        data: iniciativasJson,
-      });
 
-      map.addLayer({
-        id: "iniciativas",
-        type: "symbol",
-        source: "iniciativas",
-        layout: {
-          "icon-image": "iniciativa-marker",
-          "icon-allow-overlap": true,
-          "icon-size": 0.165,
-        },
-      });
 
-      //FUNCION COMENTAD TEMPORALMENTE
-      /*const popup = new mapboxgl.Popup({
-        closeButton: true,
-        closeOnClick: true
-      });
 
-      map.on('click', function(e) {
-        popup.remove();
+      map.on('click', 'departamentos', async function (e) {
+        const properties = e.features[0].properties;
+        console.log(properties);
+        // Configurar un offset para ajustar la posición del popup
+        const offset = [-10, -30]; // Ajusta los valores según tus necesidades
+        const popupContentStyle = `
+        width:300px;
+        line-height: 1.5;
+        padding: 10px;
+    `;
+        new mapboxgl.Popup({
+          offset: offset,
+          anchor: 'right'
+        })
+          .setLngLat(e.lngLat) // Establece la ubicación del popup en el clic
+          .setHTML(`<div style="${popupContentStyle}"><h3>${properties.NOMBRE}</h3><p>Población:</p></div>`)
+          .addTo(map);
       });
-
-      map.on('click', 'iniciativas', async function(e) {
-          const mapData = await getAllIniciativasAllDataFromServer();
-          const description = `<div><h3>${mapData[0].acf.titulo}</h3></div><div><a target="_blank" href='/iniciativas/descripcion/iniciativa/${mapData[0].id}'>Ver iniciativa</a></div>`;
-          popup.setLngLat([e.lngLat.lng, e.lngLat.lat]).setHTML(description).addTo(map);
-      });*/
 
       map.loadImage(
         "/images/base_map/marker_campus_pucp.png",
@@ -156,18 +139,18 @@ class BaseMap extends React.Component {
         'type': 'geojson',
         'data': departmentLabel,
       });
-    
+
       map.addLayer({
         'id': 'off-leash-areas',
         'type': 'symbol',
         'source': 'off-leash-areas',
         'layout': {
-        'text-field': [
-          'format',
-          ['get', 'FacilityName'],
-          { 'font-scale': 0.8 }
-        ],
-        'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular']
+          'text-field': [
+            'format',
+            ['get', 'FacilityName'],
+            { 'font-scale': 0.8 }
+          ],
+          'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular']
         }
       });
 

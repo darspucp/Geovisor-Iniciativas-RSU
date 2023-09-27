@@ -35,14 +35,6 @@
     font-family: TTNormsProBold;
     color: #c3094a;
 
-    @media (min-width: 320px) {
-    }
-
-    @media (min-width: 576px) {
-    }
-
-    @media (min-width: 768px) {
-    }
 
     @media (max-width: 1024px) {
       font-size: 2.5rem;
@@ -54,56 +46,36 @@
       margin-bottom: 1rem;
     }
 
-    @media (min-width: 1200px) {
-    }
 
     @media (min-width: 1440px) {
       font-size: 3rem;
-      margin-bottom: 1rem;
     }
 
     @media (min-width: 1920px) {
       font-size: 3.75rem;
-      margin-bottom: 2rem;
     }
 
-    @media (min-width: 2560px) {
-    }
   }
 
   .ubicacion {
     font-family: RobotoLight;
     color: #212121;
-    @media (min-width: 320px) {
-    }
-
-    @media (min-width: 576px) {
-    }
-
-    @media (min-width: 768px) {
-    }
 
     @media (max-width: 1024px) {
       font-size: 2rem;
-      margin-bottom: 1.5rem;
     }
 
     @media (min-width: 1024px) {
       font-size: 1.85rem;
-      margin-bottom: 1.5rem;
     }
 
-    @media (min-width: 1200px) {
-    }
 
     @media (min-width: 1440px) {
       font-size: 2rem;
-      margin-bottom: 2.5rem;
     }
 
     @media (min-width: 1920px) {
       font-size: 2.5rem;
-      margin-bottom: 2.75rem;
     }
 
     @media (min-width: 2560px) {
