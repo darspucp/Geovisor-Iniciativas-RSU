@@ -450,7 +450,7 @@ export default function PostDescripcion({ post }) {
           </p>
           <p className={cn("texto_pie_pagina_indicador")}>
             Censos Nacionales 2017: XII de Población, VII de Vivienda y III de
-            Comunidades Indígenas & Mapa de Pobreza monetaria distrital del 2018
+            Comunidades Indígenas & Mapa de Pobreza monetaria distrital del 2018.
           </p>
         </div>
       </div>
